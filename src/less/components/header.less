@@ -4,6 +4,47 @@
 	.status-bar {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 45px;
+
+		.info {
+			color: #999999;
+			font-family: @lato;
+			font-size: 13px;
+			font-weight: 300;
+
+			.currency, .lang {
+				margin-left: 30px;
+			}
+
+			a {
+				color: #999999;
+				text-decoration: none;
+
+				&.active, &:hover {
+					color: @brand-color;
+				}
+			}
+		}
+
+		.links {
+			font-family: @lato;
+			font-size: 13px;
+			font-weight: 300;
+
+			a {
+				text-decoration: none;
+				color: #999999;
+				margin-right: 25px;
+
+				&:hover {
+					color: @brand-color;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
 	}
 
 
@@ -45,11 +86,27 @@
 		&-nav {
 			list-style-type: none;
 			display: flex;
+
+			text-transform: uppercase;
+			font-family: @raleway;
+			font-size: 13px;
+			font-weight: 700;
+
+			a {
+				text-decoration: none;
+				color: #222222;
+				margin-right: 30px;
+
+				&:hover, &.active {
+					color: @brand-color;
+				}
+			}
 		}
 
 		&-icons {
 			list-style-type: none;
 			display: flex;
+			font-size: 14px;
 
 			&-cart {
 				position: relative;
